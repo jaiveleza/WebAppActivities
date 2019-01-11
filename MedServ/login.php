@@ -37,8 +37,9 @@ if(isset($_POST['submit']))
         $password = mysql_real_escape_string($password);
 
         //Connect to database
-        $connection=mysql_connect("localhost", "root", "rootadmin");
-        $db=mysql_select_db("medserv", $connection);
+      $connection = mysql_connect("sql3.freemysqlhosting.net", "sql3273664", "KQbSlbH91h");
+      $db = mysql_select_db("sql3273664", $connection);
+
 
      // $sql = "SELECT * FROM users WHERE `username`='".$username."' AND `password`='".$password."'";
         $sql = "SELECT * FROM users WHERE `username`='".$username."' AND `password`='".$password."'";

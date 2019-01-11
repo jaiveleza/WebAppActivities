@@ -1,9 +1,9 @@
 <?php
 // DATABASE CONNECTION STRING
-$ser_ver = "localhost";
-$user_name = "root";
-$pass_word = "rootadmin";
-$datab = "medserv";
+$ser_ver = "sql3273664";
+$user_name = "sql3273664";
+$pass_word = "KQbSlbH91h";
+$datab = "sql3.freemysqlhosting.net";
 
 //define('localhost');
 //define('root');

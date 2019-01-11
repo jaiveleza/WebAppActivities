@@ -38,12 +38,12 @@ if (!isset($_SESSION['login_user'])) {
      <div class="main">
       <div id="main_content">
        <h2>MEDSERV</h2>
-       <p>An Application that helps you check the vacancies of Multimedia Rooms.</p>
-       <p>Scroll down the page to see the result.</p>
-       <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-       <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-       <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-       <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+       <p>An Application that helps you check the vacancies of Multimedia Rooms/Audio Visual Room, Function Room, Student Lounge, Moot Court and Conference Room.</p>
+       <p>Interactive learning sessions are held in the audio visual room which is well equipped with a LCD Projector and a large screen, DVD players, sound system, chairs and other things that are helpful in an interactive learning. These two facility are located in the 8th floor of the UC-Banilad building and each has a seating capacity of two hundred (200) people </p>
+       <p>A function room is made available for meetings, trainings, film showings, conferences and even birthday celebrations.  It is situated in the mezzanine floor and can accomodate approximately a hundred and fifty (150) people. </p>
+       <p>The Student Lounge is a comfortable area open to students for gathering, studying, and relaxing between classes. The Lounge is equipped with tables and chairs,  TV, and a magazine swap table. One is available at the 2nd floor and another in the ground floor facing the basketball court. </p>
+       <p>A Moot Court is also available at the 8th floor of UC-Banilad for law students, meetings and other activities that are applicable. </p>
+       <p>A conference room, or meeting room is a room provided for singular events such as business conferences, meetings and disciplinary activities. </p>
       </div>
       </div>
 

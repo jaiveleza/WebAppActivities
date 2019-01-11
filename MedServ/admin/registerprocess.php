@@ -11,10 +11,11 @@ $errorMessage = "";
 $num_rows = 0;
 
 //connect to database
-$user_name = "root";
-$pass_word = "rootadmin";
-$database = "medserv";
-$server = "localhost";
+$user_name = "sql3273664";
+$pass_word = "KQbSlbH91h";
+$database = "sql3273664";
+$server = "sql3.freemysqlhosting.net";
+
 
 $db_handle = mysql_connect($server, $user_name, $pass_word);
 

@@ -7,11 +7,8 @@ if (isset($_GET['id']) && is_numeric($_GET['id']))
 	$id = $_GET['id'];
 	$room_id=$_GET['rid'];
 
-
-$connection = mysql_connect("localhost", "root", "rootadmin");
-//Selecting Database
-$db = mysql_select_db("medserv", $connection);
-
+    $connection = mysql_connect("sql3.freemysqlhosting.net", "sql3273664", "KQbSlbH91h");
+    $db = mysql_select_db("sql3273664", $connection);
 
 //	include 'connection.php';
 

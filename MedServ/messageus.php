@@ -93,8 +93,8 @@ if($_SERVER['REQUEST_METHOD']=='POST' && isset($_POST['form1'])){
 
     if($errorMessage == ""){
 
-      $connection = mysql_connect("localhost", "root", "rootadmin");
-      $db = mysql_select_db("caterexpress", $connection);
+      $connection = mysql_connect("sql3.freemysqlhosting.net", "sql3273664", "KQbSlbH91h");
+      $db = mysql_select_db("sql3273664", $connection);
 
         if(!$db)
         {
@@ -186,8 +186,9 @@ if($_SERVER['REQUEST_METHOD']=='POST' && isset($_POST['form2'])){
 
   if($errorMessageUs == ""){
 
-    $connection = mysql_connect("localhost","root","rootadmin");
-    $db = mysql_select_db("caterexpress", $connection);
+      $connection = mysql_connect("sql3.freemysqlhosting.net", "sql3273664", "KQbSlbH91h");
+      $db = mysql_select_db("sql3273664", $connection);
+
 
     $sql = "INSERT INTO messageus (`user_id`, `fullname`, `email`, `subject`, `comment`)
             VALUES ('".$username."','".$fullname."','".$emailadd."','".$subject."','".$comment."')";

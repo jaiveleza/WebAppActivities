@@ -70,10 +70,10 @@ if (!isset($_SESSION['login_user'])) {
     
             <?php
             $room_selector='';
-            $ser_ver = "localhost";
-            $user_name = "root";
-            $pass_word = "rootadmin";
-            $data_base = "medserv";
+            $ser_ver = "sql3.freemysqlhosting.net";
+            $user_name = "sql3273664";
+            $pass_word = "KQbSlbH91h";
+            $data_base = "sql3273664";
 
             $db_handle = mysql_connect($ser_ver, $user_name, $pass_word);
             $db_found = mysql_select_db($data_base, $db_handle);
