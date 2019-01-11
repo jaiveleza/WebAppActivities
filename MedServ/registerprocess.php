@@ -14,7 +14,7 @@ $num_rows = 0;
 $user_name = "sql3273664";
 $pass_word = "KQbSlbH91h";
 $database = "sql3273664";
-$server = "sql3.freemysqlhosting.net";
+$server = "sql3.freemysqlhosting.net:3306";
 
 try {
     $pdo=new PDO('mysql:host=$server;dbname=$database', $user_name, $pass_word);
