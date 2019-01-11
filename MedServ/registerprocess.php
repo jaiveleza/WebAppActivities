@@ -16,7 +16,15 @@ $pass_word = "KQbSlbH91h";
 $database = "sql3273664";
 $server = "sql3.freemysqlhosting.net";
 
-$db_handle = mysql_connect($server, $user_name, $pass_word);
+try {
+    $pdo=new PDO('mysql:host=$server;dbname=$database', $user_name, $pass_word);
+} catch (PDOException $e) {
+    print "Error!: " . $e->getMessage() . "<br/>";
+    die();
+}
+
+
+//$db_handle = mysql_connect($server, $user_name, $pass_word);
 
 //if($_SERVER['REQUEST_METHOD'] =='POST')
 if(isset($_POST['register']))
