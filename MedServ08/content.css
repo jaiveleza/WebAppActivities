@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+body, html{
+
+margin: 0;
+padding:0;
+font-family: 'Roboto', sans-serif;
+/*background:url(loginbg.jpg);*/
+
+
+}
+
+/*NAVIGATION*/
+
+nav{
+  
+  background:url(img/side.png);
+  /*
+  background:rgba(0,0,0,0.5);
+  */
+  background-size: cover;
+	position:	fixed;
+	top:0;
+	left:0;
+  width: 200px;
+	height: 100%;
+	/*padding: 10px 100px;*/
+	box-sizing: border-box;
+	transition: .5s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+nav .logo{
+  margin-top: 20px;
+}
+
+nav .logo img{
+  
+	height: 150px;
+	width:140px;
+  float: right;
+  margin-right: 30px;
+
+  
+}
+
+nav ul{
+
+  margin-top: 30px;
+  float: right;
+  list-style-type: none;
+
+	padding:0;
+  width: 200px;
+
+  color: white;
+}
+nav ul li{
+	list-style: none;
+  text-align: center;
+  cursor:none;
+
+}
+
+nav ul li a {
+font-size: 14px;
+  display: block;
+    color: grey;
+
+  text-decoration: none;
+
+	line-height: 40px;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	transition: .5s;
+
+}
+
+nav ul li a:hover{
+
+	color:#7c87f0;
+  cursor:pointer;
+  font-size: 20px;
+  text-decoration: none;
+
+}
+
+nav ul li a.active{
+color:#7c87f0;
+
+
+}
+
+
+/*END OF NAVIGATION*/
+
+
+
+  .main {
+  background: url(bgm.jpg) no-repeat;
+  background-size: cover;
+  margin-left: 200px; /* Same as the width of the sidenav */
+ /*background: url(main_bg.jpg); Increased text to enable scrolling background: #ffd700; */
+  width: 100%-200px;
+  height: 100vh;
+  z-index: 10;
+  position: fixed;
+}
+
+  .main_body{
+
+  margin-left: 200px; /* Same as the width of the sidenav */
+ /*background: url(main_bg.jpg); Increased text to enable scrolling background: #ffd700; */
+   min-width: 100%-200px;
+  height: 100%;
+  z-index: 2;
+  position: relative;
+}
+
+.main h2{
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin: 20px 50px;
+
+}
+.main p{
+  color: #fff;
+}
+
+#main_content{
+
+  min-width: 800px;
+  min-height: 600px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+  .main_contact_body {
+
+  background: url(img/cbg.jpg);
+  background-size: cover;
+  margin-left: 200px; /*  no-repeat;Same as the width of the sidenav */
+ /*background: url(main_bg.jpg); Increased text to enable scrolling background: #ffd700; */
+  width: 100%-200px;
+  height: 100vh;
+  z-index: 1;
+  position: fixed;
+
+
+
+}
+
+#main_contact{
+  margin-top:100px;
+
+  width: 90%;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: relative;
+}
+
+#main_contactus{
+  line-height: 30px;
+  width: 40%;
+  height: 500px;
+  position: relative;
+  background: white;
+  float: left;
+  margin-right: 0;
+  border: 1px solid #ddd;
+color: #333;
+font:13px; 'Lucida Sans', 'trebuchet MS', Arial, Helvetica;
+
+  -moz-box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
+    box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
+border-radius: 12px;
+
+}
+
+#header1_contactus{
+  border-bottom: 8px solid;
+border-bottom-color: #7BD553;
+}
+
+#header2_contactus{
+  border-bottom: 8px solid;
+border-bottom-color: #3AD5A0;
+}
+#main_contactus i{
+margin-left: 30px;
+
+}
+
+#main_messageus{
+margin-right: 4%;
+float: left;
+width: 55%;
+height: 500px;
+background: white;
+position:relative;
+border: 1px solid #ddd;
+color: #333;
+  -moz-box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
+    box-shadow: 0 2px 2px -1px rgba(0,0,0,.3);
+font:13px; 'Lucida Sans', 'trebuchet MS', Arial, Helvetica;
+border-radius: 12px;
+
+}
+
+#main_messageus .error {
+padding: 0;
+width: 100%;
+color : red;
+text-align: center;
+}
+
+h3{
+text-align: center;
+
+}
+
+#main_messageus input{
+margin: 0 20px;
+border: 1px solid darkgrey;
+border-radius: 4px;
+margin-top: 10px;
+width: 90%;
+height: 35px;
+text-align: center;
+font-size: 15px;
+align-items:center;
+justify-content: center;
+}
+
+#main_messageus textarea{
+margin: 0 20px;
+border: 1px solid darkgrey;
+border-radius: 4px;
+margin-top: 10px;
+width: 90%;
+height: 100px;
+text-align: center;
+
+align-items:center;
+justify-content: center;
+}
+
+#main_messageus input[type="submit"]:hover{
+
+cursor: pointer;
+background:#f27f27;
+color: white;
+transition: .5s
+}
+
+
+
+#room_content{
+
+  margin-top: 25px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+
+
+@media screen and (max-height: 450px) {
+    nav {padding-top: 15px;}
+    nav a {font-size: 18px;}
+}
+
+
+
+
+/*--------------------------------------------------------------------*/
+
+body{ font-family: sans-serif;}
+.none{ display:none;}
+.dropdown{color: #444444;font-size:17px;}
+#calender_section{ width:700px; margin:30px auto 0;}
+#calender_section h2{ background-color:#fff; color:#444444; font-size:17px; text-align:center; line-height:40px;}
+#calender_section h2 a{ background: #f2f2f2 none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    color: #000;
+    float: none;
+    font-weight: 100;
+    height: 20px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 20px;}
+#calender_section_top{     background: #47c9af none repeat scroll 0 0;
+    color:#fff;
+    float: left;
+    margin-top: 20px;
+    padding-bottom: 15px;
+    width: 100%;}
+#calender_section_top ul{padding:0; list-style-type:none;}
+#calender_section_top ul li{ background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: none;
+    display: block;
+    float: left;
+    font-size: 14px;
+    margin: 0;
+    min-height: 0;
+    padding: 0;
+    text-align: center;
+    width: 99px;}
+#calender_section_top ul li:last-child { border:0px;}
+#calender_section_bot{ width:100%; margin-top:20px; float:left; border-left:1px solid #ccc; border-bottom:1px solid #ccc;}
+#calender_section_bot ul{ margin:0; padding:0; list-style-type:none;}
+#calender_section_bot ul li{ float:left; width:99px; height:80px; text-align:center; border-top:1px solid #ccc; border-right:1px solid #ccc; min-height:0; background:none; box-shadow:none; margin:0; padding:0; position:relative;}
+#calender_section_bot ul li span{ margin-top:7px; float:left; margin-left:7px; text-align:center;}
+
+.grey{ background-color:#D8F781 !important;}
+.light_sky{ background-color:#CED8F6 !important;}
+
+/*========== Hover Popup ===============*/
+.date_cell { cursor: pointer; cursor: hand; }
+.date_cell:hover { background: #d8c5d7 !important; }
+.date_popup_wrap {
+  position: absolute;
+  width: 143px;
+  height: 115px;
+  z-index: 9999;
+  top: -115px;
+  left:-55px;
+  background: transparent url(add-new-event.png) no-repeat top left;
+  color: #666 !important;
+}
+.events_window {
+  overflow: hidden;
+  overflow-y: auto;
+  width: 133px;
+  height: 115px;
+  margin-top: 28px;
+  margin-left: 25px;
+}
+.event_wrap {
+  margin-bottom: 10px; padding-bottom: 10px;
+  border-bottom: solid 1px #E4E4E7;
+  font-size: 12px;
+  padding: 3px;
+}
+.date_window {
+  margin-top:20px;
+  margin-bottom: 2px;
+  padding: 5px;
+  font-size: 16px;
+  margin-left:9px;
+  margin-right:14px
+}
+.popup_event {
+  margin-bottom: 2px;
+  padding: 2px;
+  font-size: 16px;
+  width:100%;
+}
+.popup_event a {color: #d8c5d7 !important;}
+.packeg_box a {color: #a098a0;float: right;}
+a:hover {color: #f442e8;text-decoration: underline;}
+
+@media only screen and (min-width:480px) and (max-width:767px) {
+#calender_section{ width:336px;}
+#calender_section_top ul li{ width:47px;}
+#calender_section_bot ul li{ width:47px;}
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+#calender_section{ width:219px;}
+#calender_section_top ul li{ width:30px; font-size:11px;}
+#calender_section_bot ul li{ width:30px;}
+#calender_section_bot{ width:217px;}
+#calender_section_bot ul li{ height:50px;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+#calender_section{ width:530px;}
+#calender_section_top ul li{ width:74px;}
+#calender_section_bot ul li{ width:74px;}
+#calender_section_bot{ width:525px;}
+#calender_section_bot ul li{ height:50px;}
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/**/
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#cssmenu {
+  width: auto;
+  border-bottom: 3px solid #47c9af;
+  font-family: Raleway, sans-serif;
+  line-height: 1;
+}
+#cssmenu ul {
+  background: #ffffff;
+}
+#cssmenu > ul > li {
+  float: left;
+}
+#cssmenu.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+#cssmenu.align-center > ul > li {
+ 
+  display: inline-block;
+  float: none;
+}
+#cssmenu.align-right > ul > li {
+  float: right;
+}
+#cssmenu.align-right > ul > li > a {
+  margin-right: 0;
+  margin-left: -4px;
+}
+#cssmenu > ul > li > a {
+  z-index: 1;
+  padding: 18px 25px 12px 25px;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #444444;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  margin-right: -4px;
+
+}
+#cssmenu > ul > li.active > a,
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li > a:hover {
+  color: #ffffff;
+
+}
+#cssmenu > ul > li > a:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 120%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  content: "";
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-transform: perspective(5px) rotateX(2deg);
+  -webkit-transform-origin: bottom;
+  -moz-transform: perspective(5px) rotateX(2deg);
+  -moz-transform-origin: bottom;
+  transform: perspective(5px) rotateX(2deg);
+  transform-origin: bottom;
+}
+#cssmenu > ul > li.active > a:after,
+#cssmenu > ul > li:hover > a:after,
+#cssmenu > ul > li > a:hover:after {
+  cursor: pointer;
+  background: #47c9af;
+  transition: 0.5s;
+  color: white;
+}
