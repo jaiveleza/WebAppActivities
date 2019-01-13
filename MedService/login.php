@@ -17,14 +17,6 @@ if(isset($_POST['submit']))
     {
     $errorMessage = $errorMessage."Username or Password is incorrect!"."<BR/>";
     }
-  //  if(empty($_POST['username']))
-  //  {
-  //  $errorMessage = $errorMessage."Please type your username."."<BR/>";
-  //  }
-  //  if(empty($_POST['password']))
-  //  {
-  //  $errorMessage = $errorMessage."Please type your password."."<BR/>";
-  //  }
 
       if($errorMessage == "")
       {
@@ -38,16 +30,16 @@ if(isset($_POST['submit']))
         $username = stripslashes($username);
         $password = stripslashes($password);
 
-    	$username = mysqli_real_escape_string($db,$username);
-        $password = mysqli_real_escape_string($db,$password);
+        $username = mysqli_real_escape_string($db, $username);
+        $password = mysqli_real_escape_string($db, $password);
 
         //Connect to database
         //$connection=mysql_connect("localhost", "root", "rootadmin");
         //$db=mysql_select_db("medserv", $connection);
 
         //$sql = "SELECT * FROM users WHERE `username`='".$username."' AND `password`='".$password."'";
-	$sql = "SELECT * FROM users WHERE `username`='$username' AND `password`='$password'";
-        $query = mysqli_query($db, $sql);
+		$sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+        $query = mysqli_query($db, $sql );
         $num_rows=mysqli_num_rows($query);
 
           if($num_rows == 1)
@@ -59,7 +51,12 @@ if(isset($_POST['submit']))
           {
           $errorMessage = $errorMessage."Username or password is invalid!";
           }
-          mysqli_close($db);
+          mysql_close($db);
 
         }
-    ?>
+
+
+}
+
+
+?>
