@@ -1,10 +1,5 @@
 <?php
-session_start();
-$username="";
-$password="";
 
-$errorMessage="";
-$num_rows="";
 
 //Connect to database
 //$connection=mysqli_connect('localhost', 'root', 'rootadmin');
@@ -12,7 +7,13 @@ $num_rows="";
 $connection=mysql_connect('sql3.freemysqlhosting.net', 'sql3273664', 'KQbSlbH91h');
 $db=mysql_select_db('sql3273664', $connection);
 
-
+if(!isset($_SESSION){
+session_start();    
+$username="";
+$password="";
+$errorMessage="";
+$num_rows="";
+    
 if(isset($_POST['submit']))
 {
     if(empty($_POST['username']) && empty($_POST['password']))
@@ -66,6 +67,7 @@ if(isset($_POST['submit']))
 
 
 }
+}    
 
 
 ?>
