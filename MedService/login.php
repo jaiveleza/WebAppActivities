@@ -38,8 +38,8 @@ if(isset($_POST['submit']))
         $username = stripslashes($username);
         $password = stripslashes($password);
 
-        $username = mysqli_real_escape_string($username);
-        $password = mysqli_real_escape_string($password);
+    	$username = mysqli_real_escape_string($db,$username);
+        $password = mysqli_real_escape_string($db,$password);
 
         //Connect to database
         //$connection=mysql_connect("localhost", "root", "rootadmin");
