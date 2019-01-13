@@ -5,7 +5,7 @@ $username = "";
 $password="";
 $password1 ="";
 $password2 = "";
-
+$user_type = "USER";
 $errorMessage = "";
 
 $num_rows = 0;
@@ -90,8 +90,8 @@ if(isset($_POST['register']))
         else
         {
      
-          $sql = "INSERT INTO  users (username, password, email)
-                  VALUES ('$username', '$password', '$email')";
+          $sql = "INSERT INTO  users (username, password, email, user_type)
+                  VALUES ('$username', '$password', '$email', '$user_type')";
 
                   //$result = mysql_query($sql,$db_handle);
                   //$mysql_close = ($db_handle);
