@@ -42,7 +42,7 @@ if(isset($_POST['submit']))
         $query = mysqli_query($db, $sql );
         $num_rows=mysqli_num_rows($query);
 
-	while($row=mysql_fetch_array($query)){
+	while($row=mysqli_fetch_array($query)){
         $user_type = $row['user_type'];     
 		
           if($num_rows == 1 && $user_type=="USER")
