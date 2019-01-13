@@ -57,7 +57,10 @@ include_once('fr_functions.php');
       </div>  
 
       <div id="calendar_div">
-      <?php echo get_calender_full(); ?>
+      <?php 
+	     error_reporting(E_ALL);
+	      echo get_calender_full(); 
+      ?>
       </div>
 
        </div>
