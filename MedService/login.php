@@ -45,7 +45,8 @@ if(isset($_POST['submit']))
         //$connection=mysql_connect("localhost", "root", "rootadmin");
         //$db=mysql_select_db("medserv", $connection);
 
-        $sql = "SELECT * FROM users WHERE `username`='".$username."' AND `password`='".$password."'";
+        //$sql = "SELECT * FROM users WHERE `username`='".$username."' AND `password`='".$password."'";
+		$sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
         $query = mysqli_query($db, $sql);
         $num_rows=mysqli_num_rows($query);
 
@@ -61,9 +62,4 @@ if(isset($_POST['submit']))
           mysqli_close($db);
 
         }
-
-
-}
-
-
-?>
+    ?>
