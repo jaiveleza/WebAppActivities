@@ -10,7 +10,8 @@ if (!isset($_SESSION['login_user'])) {
   $username=$_SESSION['login_user'];
 
 //include_once('fr_functions.php');
-include (getcwd().'/fr_functions.php');
+//include (getcwd().'/fr_functions.php');
+include "./fr_functions.php";
 ?>
 
 <!DOCTYPE html>
