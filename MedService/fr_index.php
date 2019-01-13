@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ALL);
 session_start();
 if (!isset($_SESSION['login_user'])) {
   header("Location: home.php");
@@ -58,7 +59,7 @@ include_once('fr_functions.php');
 
       <div id="calendar_div">
       <?php 
-	     error_reporting(E_ALL);
+	     
 	      echo get_calender_full(); 
       ?>
       </div>
