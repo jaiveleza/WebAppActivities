@@ -57,7 +57,7 @@ if(isset($_POST['submit']))
           {
           $errorMessage = $errorMessage."Username or password is invalid!";
           }
-          mysql_close($connection);
+          mysqli_close($connection);
 
           }
 
