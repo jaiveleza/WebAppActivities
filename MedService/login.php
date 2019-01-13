@@ -1,19 +1,17 @@
 <?php
-
-
-//Connect to database
-//$connection=mysqli_connect('localhost', 'root', 'rootadmin');
-//$db=mysqli_select_db('medserv', $connection);
-$connection=mysqli_connect('sql3.freemysqlhosting.net', 'sql3273664', 'KQbSlbH91h');
-$db=mysqli_select_db('sql3273664', $connection);
-
-if(!isset($_SESSION){
-session_start();    
+session_start();
 $username="";
 $password="";
+
 $errorMessage="";
 $num_rows="";
-    
+
+//Connect to database
+//$connection=mysql_connect('localhost', 'root', 'rootadmin');
+//$db=mysql_select_db('medserv', $connection);
+$db = mysqli_connect('localhost', 'root', 'rootadmin', 'medserv');
+
+
 if(isset($_POST['submit']))
 {
     if(empty($_POST['username']) && empty($_POST['password']))
@@ -49,8 +47,8 @@ if(isset($_POST['submit']))
         //$db=mysql_select_db("medserv", $connection);
 
         $sql = "SELECT * FROM users WHERE `username`='".$username."' AND `password`='".$password."'";
-        $query = mysql_query($sql);
-        $num_rows=mysql_num_rows($query);
+        $query = mysqli_query($db, $sql);
+        $num_rows=mysqli_num_rows($query);
 
           if($num_rows == 1)
           {
@@ -61,13 +59,12 @@ if(isset($_POST['submit']))
           {
           $errorMessage = $errorMessage."Username or password is invalid!";
           }
-          mysql_close($connection);
+          mysqli_close($db);
 
         }
 
 
 }
-}    
 
 
 ?>

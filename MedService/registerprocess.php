@@ -11,7 +11,7 @@ $errorMessage = "";
 $num_rows = 0;
 
 //connect to database
-include('login.php');
+include 'login.php';
 //$user_name = "root";
 //$pass_word = "rootadmin";
 //$database = "medserv";
@@ -22,7 +22,6 @@ include('login.php');
 //if($_SERVER['REQUEST_METHOD'] =='POST')
 if(isset($_POST['register']))
 {
-
       $username =$_POST['username'];
       $email = $_POST['email'];
       $password1 =$_POST['password1'];
@@ -73,16 +72,16 @@ if(isset($_POST['register']))
       $sql_u = "SELECT * FROM users WHERE username= '$username'";
       $sql_e = "SELECT * FROM users WHERE email= '$email'";
 
-      $res_u = mysql_query($sql_u);
-      $res_e = mysql_query($sql_e);
+      $res_u = mysqli_query($db, $sql_u);
+      $res_e = mysqli_query($db, $sql_e);
 
-        if (mysql_num_rows($res_u) > 0)
+        if (mysqli_num_rows($res_u) > 0)
 
         {
         $errorMessage = "Sorry... username already taken";  
         }
 
-        else if(mysql_num_rows($res_e) > 0)
+        else if(mysqli_num_rows($res_e) > 0)
 
         {
         $errorMessage = "Sorry... email already taken"; 
@@ -96,8 +95,8 @@ if(isset($_POST['register']))
 
                   //$result = mysql_query($sql,$db_handle);
                   //$mysql_close = ($db_handle);
-					$result = mysql_query($sql,$connection);
-					$mysql_close = ($connection);
+					$result = mysqli_query($db, $sql);
+					mysqli_close($db);
                  echo    "<script>
                           alert('Successfully Registered');
                           window.location.href='index.php';
