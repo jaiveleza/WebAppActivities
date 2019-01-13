@@ -7,8 +7,8 @@ $errorMessage="";
 $num_rows="";
 
 //Connect to database
-$connection=mysql_connect('localhost', 'root', 'rootadmin');
-$db=mysql_select_db('medserv', $connection);
+$connection=mysqli_connect('localhost', 'root', 'rootadmin');
+$db=mysqli_select_db('medserv', $connection);
 
 
 
