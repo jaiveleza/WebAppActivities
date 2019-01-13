@@ -59,8 +59,9 @@ include_once('fr_functions.php');
 
       <div id="calendar_div">
       <?php 
-	     
-	      echo get_calender_full(); 
+	      echo 'calendar start';
+	      echo get_calender_full();
+	      echo 'calendar end';
       ?>
       </div>
 
