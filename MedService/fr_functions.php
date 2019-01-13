@@ -1,4 +1,5 @@
 <?php
+echo 'fr functions included';
 $room_id = "fr";
 /*
  * This function create By Jignesh Patel
