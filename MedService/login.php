@@ -4,8 +4,8 @@
 //Connect to database
 //$connection=mysqli_connect('localhost', 'root', 'rootadmin');
 //$db=mysqli_select_db('medserv', $connection);
-$connection=mysql_connect('sql3.freemysqlhosting.net', 'sql3273664', 'KQbSlbH91h');
-$db=mysql_select_db('sql3273664', $connection);
+$connection=mysqli_connect('sql3.freemysqlhosting.net', 'sql3273664', 'KQbSlbH91h');
+$db=mysqli_select_db('sql3273664', $connection);
 
 if(!isset($_SESSION){
 session_start();    
