@@ -11,7 +11,7 @@ $errorMessage = "";
 $num_rows = 0;
 
 //connect to database
-include('login.php');
+include 'login.php';
 //$user_name = "root";
 //$pass_word = "rootadmin";
 //$database = "medserv";
@@ -67,7 +67,7 @@ if(isset($_POST['register']))
       //$db_found = mysql_select_db($database, $db_handle);
 
       //if($db_found)
-	  if($db)
+      if($db)
       {
 
       $sql_u = "SELECT * FROM users WHERE username= '$username'";
