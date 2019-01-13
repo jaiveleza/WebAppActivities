@@ -60,7 +60,7 @@ include_once('fr_functions.php');
       <div id="calendar_div">
       <?php 
 	      echo 'calendar start';
-	      echo get_calender_full();
+	      get_calender_full();
 	      echo 'calendar end';
       ?>
       </div>
