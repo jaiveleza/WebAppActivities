@@ -42,7 +42,10 @@ if(isset($_POST['submit']))
         $query = mysqli_query($db, $sql );
         $num_rows=mysqli_num_rows($query);
 
-          if($num_rows == 1)
+	while($row=mysql_fetch_array($query)){
+        $user_type = $row['user_type'];     
+		
+          if($num_rows == 1 && $user_type=="USER")
           {
             $_SESSION['login_user']=$username;
             header("Location: home.php");
@@ -55,7 +58,7 @@ if(isset($_POST['submit']))
 
         }
 
-
+      }
 }
 
 
