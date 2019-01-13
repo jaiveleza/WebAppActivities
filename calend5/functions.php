@@ -1,4 +1,5 @@
 <?php
+echo 'fr functions included';
 /*
  * This function create By Jignesh Patel	 
  * Function requested by Ajax
