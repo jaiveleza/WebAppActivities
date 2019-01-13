@@ -9,8 +9,7 @@ $num_rows="";
 //Connect to database
 //$connection=mysql_connect('localhost', 'root', 'rootadmin');
 //$db=mysql_select_db('medserv', $connection);
-$db = mysqli_connect('localhost', 'root', 'rootadmin', 'medserv');
-
+$db = mysqli_connect('sql3.freemysqlhosting.net', 'sql3273664', 'KQbSlbH91h', 'sql3273664');
 
 if(isset($_POST['submit']))
 {
