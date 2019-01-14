@@ -4,7 +4,7 @@ echo '<br/>' . getcwd();
 echo $_SERVER['DOCUMENT_ROOT'];
 error_reporting(E_ALL);
 //include_once('functions.php'); 
-include_once(getcwd().'/fr_functions.php');
+include(getcwd().'/fr_functions.php');
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
