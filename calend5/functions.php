@@ -131,7 +131,7 @@ function get_calender_full($year = '',$month = '')
 		function get_calendar_data(target_div,year,month){
 			$.ajax({
 				type:'POST',
-				url:'functions.php',
+				url:'app/functions.php',
 				data:'fun_type=get_calender_full&year='+year+'&month='+month,
 				success:function(html){
 					$('#'+target_div).html(html);
@@ -142,7 +142,7 @@ function get_calender_full($year = '',$month = '')
 		function get_events_information(date){
 			$.ajax({
 				type:'POST',
-				url:'functions.php',
+				url:'app/functions.php',
 				data:'fun_type=get_events_information&date='+date,
 				success:function(html){
 					$('#event_list').html(html);
@@ -174,7 +174,7 @@ function get_calender_full($year = '',$month = '')
 				var title = $('#eventTitle').val();
 				$.ajax({
 					type:'POST',
-					url:'functions.php',
+					url:'app/functions.php',
 					data:'fun_type=add_event_information&date='+date+'&title='+title,
 					success:function(msg){
 						if(msg == 'ok'){
